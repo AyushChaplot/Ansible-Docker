@@ -82,10 +82,6 @@
           register: docker_info
           
 
-        - name: Print docker IpAddress info
-          debug: 
-                msg: "{{ docker_info }}"
-
         - name: Updating Ansible Inventory
           blockinfile: 
                  path: /root/ip.txt
